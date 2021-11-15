@@ -1,0 +1,527 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    /* float: right; */
+    /* FIXME */
+    display: inline-block;
+    
+   }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+
+@media screen and (max-width:680px) {
+ 
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+}
+
+
+
+/* start reCAPTCHA styles */
+
+*{
+  box-sizing: border-box;
+}
+
+form>div {
+    margin:1em;
+    margin-left: 200px;
+
+   
+}
+
+h1{
+  color: blue;
+  padding-left: 250px;
+}
+/* writes to small text above reCAPTCHA upon failure */
+
+.dateFeedback{
+    font-style:italic;
+    font-size:70%;
+    font-weight:bold;
+    color:#f00;
+}
+
+input:required {
+      border: 1px solid red;
+}
+
+ input:optional, textarea:optional {
+     background-color:#f1f1f1;
+     border:1px solid #ccc;
+}
+
+input[type="submit"], input[type="button"] {
+  background-color: blue;
+  border-radius: 4px;
+  border: solid 1px #ccc;
+  padding: 0.3em 0.5em;
+  margin-left: 40px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  max-width: 350px;
+}
+
+legend {
+  margin-left: 0.5em;
+  padding: 0.2em 0.5em;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+/* end reCAPTCHA styles */
+/* keeps form from bunching up to left */
+@media all and (min-width:501px){
+  div.wrapper form{
+      margin-left:22.8px;
+
+  }
+}
+
+/* My WEB120 Portal Website Styles */
+
+/* My WEB120 Portal Website Styles */
+
+html {
+  background-color:#66D3F4;
+}
+
+#error {
+  width: 100%;
+  /* height: 20px; */
+}
+
+#mamp {
+  width: 100%;
+  /* height: 20px; */
+}
+
+main.wrapper {
+  background-color:#fff;
+  overflow:auto;
+}
+
+h1>a {
+  text-decoration: none;
+  color:#000;
+}
+
+.logo {
+  color:red;
+  margin-left:1%;
+  text-shadow:1px 1px #ccc;
+  font-size:1.25em;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: auto;
+  max-width: 98%;
+} 
+
+div.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+clear:both;
+}
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+
+ main.wrapper {
+  width:80%;
+  margin:auto;
+}
+
+  section {
+  width:65%;
+  float:left;
+}
+
+   aside {	
+  width:34%;
+  float:right;
+}
+  
+  img.desktop {
+        float:right;
+         width:50%;
+          display:inline;
+          border:2px solid #fff;
+          box-shadow: 10px 10px 5px #ccc;
+         
+  }
+
+  #phrase{
+      margin-top: 200px;
+      margin-left: 50px;
+      font-family: cursive;
+  }
+  
+  h5{
+      margin-left: 200px;
+  }
+ 
+  
+  img.tablet, img.phone {
+       display:none;
+    }  
+  
+  /* Change background color of navigation on selected page */
+  ul.topnav li a.selected {
+          background-color:blue;
+          color:#ccc;
+    }
+      .pageID{
+          margin-left: 120px;
+      }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+
+section {
+  width:60%;
+  float:left;
+}
+  .pageID{
+      margin-left: 200px;
+  }
+
+aside {	
+  width:39%;
+  float:right;
+}
+
+  #phrase{
+      margin-top: 200px;
+      margin-left: 50px;
+      font-family: cursive;
+  }
+
+  h5{
+      margin-left: 200px;
+  }
+
+  img.tablet {
+         width: 300px;
+          display:inline-block;
+          height: 300px;
+          border:2px solid #fff;
+          box-shadow: 10px 10px 5px #ccc;
+          margin-left: 100px;
+
+  }
+  
+  img.desktop, img.phone {
+       display:none;
+    }  
+  
+  
+  /* Change background color of navigation on selected page */
+  ul.topnav li a.selected {
+      background-color: #0F5298;
+      color:#ccc;
+  }
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+  
+  img.phone {
+         width:400px;
+          height: 300px;
+          margin-left: 60px;
+          display:inline-block;
+          border:2px solid #fff;
+          box-shadow: 10px 10px 5px #ccc;
+  }
+  
+  img.tablet, img.desktop {
+       display:none;
+    }  
+      #phrase{
+          font-family: cursive;
+          margin-left: 60px;
+      }
+  
+      h5{
+          margin-left: 200px;
+      }
+      .pageID{
+          margin-left: 200px;
+      }
+}
+
+/* font awesome icon styles */
+i.logo {
+  color:darkred; /* a less boring color */
+  text-shadow:1px 1px #ccc; /* gives the icon a little depth */
+  font-size:1.25em; /* font awesome icons are text, so make it a bit bigger */
+  margin-left:1%; /* this keeps the icon from being squeeezed to the left */
+}
+
+
+
+
+/* My WEB120 Portal Website Styles */
+
+/* My WEB120 Portal Website Styles */
+
+html {
+  background-color:#66D3F4;
+}
+
+#error {
+  width: 100%;
+  /* height: 20px; */
+}
+
+#mamp {
+  width: 100%;
+  /* height: 20px; */
+}
+
+main.wrapper {
+  background-color:#fff;
+  overflow:auto;
+}
+
+h1>a {
+  text-decoration: none;
+  color:#000;
+}
+
+.logo {
+  color:red;
+  margin-left:1%;
+  text-shadow:1px 1px #ccc;
+  font-size:1.25em;
+}
+
+/* Embed Responsively Rules! */
+div.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: auto;
+  max-width: 98%;
+} 
+
+div.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+clear:both;
+}
+
+/* START RESPONSIVE STYLES */
+
+/* DESKTOP */
+@media all and (min-width:1400px) {
+
+ main.wrapper {
+  width:80%;
+  margin:auto;
+}
+
+  section {
+  width:65%;
+  float:left;
+}
+
+   aside {	
+  width:34%;
+  float:right;
+}
+  
+  img.desktop {
+        float:right;
+         width:50%;
+          display:inline;
+          border:2px solid #fff;
+          box-shadow: 10px 10px 5px #ccc;
+         
+  }
+
+  #phrase{
+      margin-top: 200px;
+      margin-left: 50px;
+      font-family: cursive;
+  }
+  
+  h5{
+      margin-left: 200px;
+  }
+ 
+  
+  img.tablet, img.phone {
+       display:none;
+    }  
+  
+  /* Change background color of navigation on selected page */
+  ul.topnav li a.selected {
+          background-color:blue;
+          color:#ccc;
+    }
+      .pageID{
+          margin-left: 120px;
+      }
+}
+
+
+/* TABLET */
+@media all and (min-width:737px) and (max-width:1399px) {
+
+section {
+  width:60%;
+  float:left;
+}
+  .pageID{
+      margin-left: 200px;
+  }
+
+aside {	
+  width:39%;
+  float:right;
+}
+
+  #phrase{
+      margin-top: 200px;
+      margin-left: 50px;
+      font-family: cursive;
+  }
+
+  h5{
+      margin-left: 200px;
+  }
+
+  img.tablet {
+         width: 300px;
+          display:inline-block;
+          height: 300px;
+          border:2px solid #fff;
+          box-shadow: 10px 10px 5px #ccc;
+          margin-left: 100px;
+
+  }
+  
+  img.desktop, img.phone {
+       display:none;
+    }  
+  
+  
+  /* Change background color of navigation on selected page */
+  ul.topnav li a.selected {
+      background-color: #0F5298;
+      color:#ccc;
+  }
+}
+
+/* PHONE */
+@media all and (max-width:736px) {
+  
+  img.phone {
+         width:400px;
+          height: 300px;
+          margin-left: 60px;
+          display:inline-block;
+          border:2px solid #fff;
+          box-shadow: 10px 10px 5px #ccc;
+  }
+  
+  img.tablet, img.desktop {
+       display:none;
+    }  
+      #phrase{
+          font-family: cursive;
+          margin-left: 60px;
+      }
+  
+      h5{
+          margin-left: 200px;
+      }
+      .pageID{
+          margin-left: 200px;
+      }
+}
+
+/* font awesome icon styles */
+i.logo {
+  color:darkred; /* a less boring color */
+  text-shadow:1px 1px #ccc; /* gives the icon a little depth */
+  font-size:1.25em; /* font awesome icons are text, so make it a bit bigger */
+  margin-left:1%; /* this keeps the icon from being squeeezed to the left */
+}
+
