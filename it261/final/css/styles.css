@@ -1,0 +1,325 @@
+/* styles for my week 9 exercise */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#f5f5dc;
+}
+
+header{
+    background:rgba(0, 128, 0, 0.3);
+    height: 200px;
+}
+
+.success{
+    color: green;
+    padding: 10px;
+    float: right;
+    margin-right: 4%;
+}
+
+.welcome-logout{
+    float:left;
+    padding: 10px;
+    color: green;
+    margin-top: 3%;
+}
+
+a.welcome-logout{
+    color: azure;
+}
+
+#wrapper{
+    clear:both;
+    width: 940px;
+    margin:0 auto;
+    min-height: 400px;
+}
+
+
+/* NAV */
+
+nav{
+    height:50px;
+    float: right;
+}
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+
+
+
+nav li{
+    float: left;
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.current{
+    color:red;
+    font-weight: bold;
+    border-bottom: red 1px solid;
+}
+
+nav ul {
+    margin-top: 10%;
+}
+
+nav a{
+    color: white;
+    font-size: 25px;
+    text-shadow: 1px 1px gray;
+}
+
+/* CSS FINAL PROJECT */
+
+
+footer li {
+    float: right;
+    list-style: none;
+    padding-right: 2%;
+}
+
+footer {
+    border-top: 1px dotted #333;
+    margin-top: 2%;
+}
+
+footer ul {
+    margin-top: 1%;
+}
+
+.login{
+    margin-top: 10%;
+}
+
+.register {
+    margin-top: 10%;
+}
+
+#logo{
+    float: left;
+    width: 180px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    margin-left: 8%;
+}
+
+/* home page */
+
+img.homeImage{
+    width: 70%;
+    margin: 3% auto;
+    display: block;
+}
+
+img.database1{
+    display: block;
+    max-width: 90%;
+    min-width: 60%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+img.database2{
+    display: block;
+    max-width: 90%;
+    min-width: 60%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+/* switch */
+
+img.switchImage {
+    display: block;
+    max-width: 70%;
+    min-width: 50%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+h2 {
+    text-align: center;
+    margin: 2%;
+}
+
+p.textSwitch{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+ul.switchList{
+text-align: center;
+list-style-type: none;
+
+}
+
+header a.logout {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px gray;
+    font-size: 1.3em;
+}
+
+ ul.switchList a {
+    text-decoration: none;
+    color: green;
+    text-shadow: 1px 1px grey;
+    font-size: 1.5em;
+}
+
+ul.switchList li {
+    margin: 1%;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    text-shadow: 1px 1px grey;
+    font-size: 1.3em;
+}
+
+/* Paintings */
+
+h4.paintingH4{
+    font-size: 1.3em;
+    margin-top: 1%;
+}
+
+ul.paintingList {
+    list-style: none;
+    font-size: 1.2em;
+    margin: 1%;
+}
+
+a.clickHere{
+    color: green;
+}
+
+img.center{
+    width: 70%;
+    display: block;
+    margin: 4% auto;
+}
+
+/* painting-view */
+
+ul.paintingViewUl{
+    font-size: 1.3em;
+    list-style: none;
+    margin: 3%;
+    text-align: center;
+}
+
+p.paintingP{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+a.backButton{
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FORM  */
+
+fieldset ul {
+    list-style: none;
+    margin: 4%;
+}
+
+label{
+    margin: 4%;
+}
+
+textarea {
+    margin-left: 4%;
+    width: 90%;
+}
+
+
+/* form styles */
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+fieldset{
+    padding: 10px;
+}
+
+form{
+    width: 500px;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    margin:40px 0;
+}
+
+h3{
+    text-align: center;
+    margin:10px 0;
+}
+
+
+.block{
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+.error{
+    margin: 10px 0;
+    color: red;
+    font-style: italic;
+}
+
+select {
+    margin-left: 4%;
+    width: 90%;
+}
+
+input.submit{
+    width: 50%;
+    margin-left: 25%;
+    color: green;
+    font-size: 1.5em;
+}
+
+a.reset{
+    text-align: center;
+    color: green;
+    margin-left: 45%;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+h1.greenRegister{
+    color: green;
+}
+
+h1.greenLogin{
+    color: green;
+}
